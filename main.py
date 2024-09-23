@@ -14,21 +14,26 @@ month = None
 day = None
 
 # Get the year, then the month, then the day
+year = input("year: ")
+month = input("month: ")
+day = input("day: ")
 # housekeeping()
 
 # Check to be sure date is valid
 
 if int(year) <= MIN_YEAR: # invalid year
-    validDate = False
+    validDate = print(f"{month}/{day}/{year} is an invalid date.")
 elif int(month) < MIN_MONTH or int(month) > MAX_MONTH: # invalid month
-    validDate = False
+    validDate = print(f"{month}/{day}/{year} is an invalid date.")
 elif int(day) < MIN_DAY or int(day) > MAX_DAY: # invalid day
-    validDate = False
+    validDate = print(f"{month}/{day}/{year} is an invalid date.")
 
 # Test to see if date is valid and output date and whether it is valid or not
 
 # endOfJob()
 if validDate == True:
+    print(f"{month}/{day}/{year} is a valid date.") 
     # Output statement
 else:
     # Output statement
+    print(f"{month}/{day}/{year} is an invalid date.")
