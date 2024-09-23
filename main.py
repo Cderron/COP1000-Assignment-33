@@ -7,7 +7,7 @@ MIN_YEAR = 0
 MIN_MONTH = 1
 MAX_MONTH = 12
 MIN_DAY = 1
-MAX_DAY = 31
+MAX_DAY = 30
 
 year = None
 month = None
